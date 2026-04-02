@@ -181,7 +181,7 @@ const projects: Project[] = [
 
 const skills: Record<string, string[]> = {
   "Languages": ["Python", "Java", "PHP", "C/C++", "JavaScript", "TypeScript"],
-  "Web & Frontend": ["React", "Next.js", "Flutter", "Tailwind CSS", "HTML/CSS"],
+  "Web & Frontend": ["React", "Next.js", "React Native", "Tailwind CSS", "HTML/CSS"],
   "Backend & APIs": ["Node.js", "Express.js", "Spring Boot", "Laravel"],
   "Cloud & DevOps": ["Docker", "AWS EC2/ECS/RDS", "Terraform", "Nginx", "Git", "CI/CD"],
   "Cybersecurity": ["Cryptography", "AES/HMAC", "Secure Design", "Network Security"],
