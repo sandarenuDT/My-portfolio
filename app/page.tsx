@@ -42,6 +42,32 @@ const projects: Project[] = [
 
   },
   {
+    title: "ChainHeart — Blockchain Donor Tracking System",
+    period: "2025 – 2026",
+    shortDesc: "Decentralized donation platform with transparent fund tracking and donor governance.",
+    fullDesc: "A blockchain-based donation platform built on Ethereum that ensures full transparency and eliminates fraud by locking funds in smart contracts. Donors participate in governance by voting on withdrawal requests, making every transaction secure, verifiable, and trustless without relying on a centralized backend.",
+    highlights: [
+      "Smart contract-based fund management (Solidity)",
+      "Donor voting system for withdrawal approval",
+      "Fully transparent transactions on blockchain (Etherscan)",
+      "MetaMask wallet integration for authentication",
+      "Real-time updates using blockchain event listeners"
+    ],
+    tech: [
+      "Solidity",
+      "Ethereum",
+      "React",
+      "TypeScript",
+      "Hardhat",
+      "TailwindCSS",
+      "ethers.js"
+    ],
+    github: "https://github.com/sandarenuDT/chain-heart",
+    category: "Blockchain Application",
+    icon: <Database className="w-5 h-5" />,
+    color: "#C81CDE"
+  },
+  {
     title: "Blockchain-Based Supply Chain Tracker",
     period: "Jun 2025 – Dec 2025",
     shortDesc: "Cold chain IoT + Blockchain for tamper-proof shipment tracking.",
