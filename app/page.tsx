@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
-import { Github, Linkedin, Mail, Phone, ExternalLink, Code, Database, Cloud, Shield, Brain, Cpu, ChevronDown, Menu, X, ArrowUpRight, Play, Lock, Zap, Globe, Star, ChevronRight, Smartphone } from 'lucide-react';
+import { Utensils, Server, Github, Linkedin, Mail, Phone, ExternalLink, Code, Database, Cloud, Shield, Brain, Cpu, ChevronDown, Menu, X, ArrowUpRight, Play, Lock, Zap, Globe, Star, ChevronRight, Smartphone } from 'lucide-react';
 import Image from 'next/image';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -22,6 +22,65 @@ interface Project {
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 const projects: Project[] = [
+  {
+    title: "Restaurant Management System",
+    period: "2026",
+    shortDesc: "Real-time QR-based restaurant ordering and management platform.",
+    fullDesc: "A full-stack production-grade restaurant operating system designed to replace traditional paper-based workflows. The platform enables customers to scan a QR code at the table, browse a digital menu, place orders, and track them in real time without installing any app. The system includes four role-based interfaces: customer, waiter, kitchen display, and admin dashboard. Built with a React frontend and a Node.js/Express backend, it uses WebSocket communication for instant order updates across all clients. Features include JWT-based authentication with role-based access control, PostgreSQL database with Prisma ORM, Cloudinary image uploads, automated billing with tax and discount handling, and an analytics dashboard for revenue tracking, table occupancy, and sales insights. Deployed using Vercel and Railway.",
+    highlights: [
+      "Built a multi-role system (customer, waiter, kitchen, admin) with real-time order tracking using Socket.io",
+      "Implemented QR code-based table ordering accessible via mobile browsers without app installation",
+      "Designed a PostgreSQL database with Prisma ORM covering orders, billing, staff, and session management",
+      "Developed JWT authentication with role-based access control and refresh token rotation",
+      "Integrated Cloudinary for menu image uploads and implemented automated billing with tax and discount support",
+      "Created an admin analytics dashboard with revenue tracking, top-selling items, and table occupancy insights"
+    ],
+    tech: [
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "React",
+      "Socket.io",
+      "Tailwind CSS"
+    ],
+    github: "https://github.com/YOUR_USERNAME/YOUR_REPO",
+    category: "Full-Stack Web Application",
+    icon: <Utensils className="w-5 h-5" />,
+    color: "#22c55e"
+  },
+  {
+    title: "URL Shortener Microservices",
+    period: "Apr 2026",
+    shortDesc: "Production-grade URL shortener built with microservices and Kubernetes deployment.",
+    fullDesc: "A scalable URL shortener platform developed using a microservices architecture in .NET 8. The system supports secure JWT authentication, high-speed URL redirection with Redis caching, asynchronous event processing using RabbitMQ, and cloud-native deployment on AWS EKS with Docker and Kubernetes. Integrated PostgreSQL with Entity Framework Core and automated CI/CD workflows through GitHub Actions for reliable production deployments.",
+    highlights: [
+      "Built microservices-based backend architecture using ASP.NET Core",
+      "Implemented JWT authentication and secure API access",
+      "Integrated Redis caching for high-performance URL redirects",
+      "Used RabbitMQ for asynchronous message processing",
+      "Deployed containerized services on AWS EKS with Kubernetes",
+      "Automated CI/CD pipeline using GitHub Actions"
+    ],
+    tech: [
+      ".NET 8",
+      "ASP.NET Core",
+      "PostgreSQL",
+      "EF Core",
+      "Redis",
+      "RabbitMQ",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "GitHub Actions",
+      "JWT"
+    ],
+    github: "https://github.com/your-github-link",
+    category: "Microservices Platform",
+    icon: <Server className="w-5 h-5" />,
+    color: "#3b82f6"
+  },
   {
     title: "LifeDrop Mobile App",
     period: "Jan 2026 – Present",
